@@ -35,17 +35,3 @@ function login() {
 
 
 }
-let c = 1
-
-while (c <= 10) {
-    console.log(c)
-    c++
-
-}
-
-do {
-
-    let c = 1
-    console.log(c)
-    c++
-} while (c <= 10)
