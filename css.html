@@ -259,8 +259,15 @@
 
             <h1 class="nome-profs">Lista</h1>
             <br>
-            <img class="img-effect" src="Captura de tela 2026-01-31 205102.png" alt="" height="240px">
-
+            <h1 style="color: yellow; font-size: 40px;" class="escrever">
+                <details>
+                    <summary>text-btn</summary>
+                    <ol>
+                        <li>lista1</li>
+                        <li>lista2</li>
+                    </ol>
+                </details>
+            </h1>
             <br>
             <details class="detalhes">
                 <summary class="detalhes-smr3">
@@ -272,91 +279,21 @@
                     </span>
                 </summary>
 
+
                 <p>
-                    Pequeno <strong>gafanhoto</strong> 🌱
-                    <br><br>
+                    Use <span style="background: yellow; color: black;">&lt;details&gt;</span>
+                    para criar a área que abre e fecha.<br><br>
 
-                    A tag
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        &lt;details&gt;
-                    </span>
-                    <br>
-                    cria uma área que pode ser aberta e fechada pelo usuário.
-                    <br><br>
+                    Dentro dela coloque
+                    <span style="background: yellow; color: black;">&lt;summary&gt;</span>,
+                    que será o botão clicável.<br><br>
 
-                    Dentro dela usamos
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        &lt;summary&gt;
-                    </span>
-                    <br>
-                    que é o botão visível que a pessoa clica.
-                    <br><br>
-
-                    Exemplo:
-                    <br><br>
-
-                    <span style="background: yellow; color: black;">
-                        &lt;summary&gt;text-btn&lt;/summary&gt;
-                    </span>
-                    <br><br>
-
-                    Quando o usuário clica, o conteúdo escondido aparece.
-                    <br><br>
-
-                    Para criar uma lista numerada usamos
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        &lt;ol&gt;
-                    </span>
-                    <br>
-                    que significa "ordered list" (lista ordenada).
-                    <br><br>
-
-                    Cada item da lista é criado com
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        &lt;li&gt;
-                    </span>
-                    <br>
-                    que significa "list item".
-                    <br><br>
-
-                    Exemplo completo:
-                    <br><br>
-
-                    <span style="background: yellow; color: black;">
-                        &lt;details&gt;
-                    </span>
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        &nbsp;&nbsp;&lt;summary&gt;text-btn&lt;/summary&gt;
-                    </span>
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        &nbsp;&nbsp;&lt;ol&gt;
-                    </span>
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;lista1&lt;/li&gt;
-                    </span>
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        &nbsp;&nbsp;&lt;/ol&gt;
-                    </span>
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        &lt;/details&gt;
-                    </span>
-                    <br><br>
-
-                    Assim você cria um botão que mostra uma lista numerada ao clicar.
-                    <br><br>
-
-                    Agora é sua vez de praticar 🚀
+                    Abaixo do summary adicione
+                    <span style="background: yellow; color: black;">&lt;ol&gt;</span>
+                    e dentro dele use
+                    <span style="background: yellow; color: black;">&lt;li&gt;</span>
+                    para criar os itens da lista.
                 </p>
-
 
 
             </details>
@@ -384,8 +321,10 @@
 
             <h1 class="nome-profs"> Campo de resposta com INPUT </h1>
             <br>
-            <img style="margin-top: 50px;
-            margin-bottom: 50px;" class="img-effect" src="Captura de tela 2026-01-31 205159.png" alt="">
+
+            <h1 style="color: yellow; font-size: 40px;" class="escrever"><input type="text" placeholder="Nome">
+                <input type="number" placeholder="Idade">
+            </h1>
 
             <br>
             <details class=" detalhes">
@@ -400,76 +339,21 @@
 
 
                 <p>
-                    Pequeno <strong>gafanhoto</strong> 🌱
-                    <br><br>
-
-                    Para criar um campo onde o usuário pode digitar algo,
-                    usamos a tag
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        &lt;input&gt;
-                    </span>
-                    <br><br>
-
-                    Quando colocamos
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        type="text"
-                    </span>
-                    <br>
-                    significa que o campo será para texto comum,
-                    como nome, sobrenome ou cidade.
-                    <br><br>
+                    Use <span style="background: yellow; color: black;">&lt;input&gt;</span>
+                    para criar um campo de digitação.<br><br>
 
                     O atributo
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        name
-                    </span>
-                    <br>
-                    serve para identificar esse campo quando enviamos dados.
-                    <br><br>
+                    <span style="background: yellow; color: black;">type="text"</span>
+                    é para texto comum.<br>
 
-                    Já o
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        placeholder
-                    </span>
-                    <br>
-                    mostra uma dica dentro do campo antes da pessoa digitar.
-                    <br><br>
+                    Já
+                    <span style="background: yellow; color: black;">type="number"</span>
+                    é para números.<br><br>
 
-                    Exemplo para nome:
-                    <br><br>
-
-                    <span style="background: yellow; color: black;">
-                        &lt;input type="text" name="nome" placeholder="Diga seu Nome"&gt;
-                    </span>
-                    <br><br>
-
-                    Agora, para idade, o mais correto é usar
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        type="number"
-                    </span>
-                    <br>
-                    porque idade é um valor numérico.
-                    <br><br>
-
-                    Exemplo correto:
-                    <br><br>
-
-                    <span style="background: yellow; color: black;">
-                        &lt;input type="number" name="idade" placeholder="Diga sua Idade"&gt;
-                    </span>
-                    <br><br>
-
-                    Assim garantimos que o usuário digite apenas números.
-                    <br><br>
-
-                    Agora é sua vez de praticar 🚀
+                    O
+                    <span style="background: yellow; color: black;">placeholder</span>
+                    mostra uma dica dentro do campo.
                 </p>
-
 
             </details>
             <br>
@@ -494,8 +378,11 @@
 
             <h1 class="nome-profs">Texto com P-H1-H2</h1>
             <br>
-            <img class="img-effect" src="Captura de tela 2026-01-31 205321.png" alt="">
 
+            <h1 style="color: yellow; " class="escrever">Título</h1> <br>
+            <h2 style="color: yellow; " class="escrever">Subtítulo</h2> <br>
+            <p style="color: yellow; " class="escrever">Texto</p> <br>
+            99
             <br>
             <details class="detalhes">
                 <summary class="detalhes-smr3">
@@ -504,81 +391,18 @@
 
                 </summary>
 
-                <h1>Titulo</h1>
-                <h2>Sub Titulo</h2>
-
                 <p>
-                    Pequeno <strong>gafanhoto</strong> 🌱
-                    <br>
-                    <br>
+                    Use <span style="background: yellow; color: black;">&lt;h1&gt;</span>
+                    para o título principal.<br><br>
 
-                    Para criar um título principal usamos a tag
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        &lt;h1&gt;
-                    </span>
-                    <br>
-                    Ela representa o título mais importante da página.
-                    <br>
-                    <br>
+                    Use <span style="background: yellow; color: black;">&lt;h2&gt;</span>
+                    para o subtítulo.<br><br>
 
-                    Para criar um subtítulo usamos
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        &lt;h2&gt;
-                    </span>
-                    <br>
-                    Ela organiza o conteúdo abaixo do título principal.
-                    <br>
-                    <br>
+                    Use <span style="background: yellow; color: black;">&lt;p&gt;</span>
+                    para texto comum.<br><br>
 
-                    Para escrever um texto comum usamos
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        &lt;p&gt;
-                    </span>
-                    <br>
-                    Ela significa "parágrafo".
-                    <br>
-                    <br>
-
-                    É MUITO importante
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        abrir e fechar as tags corretamente
-                    </span>
-                    <br>
-                    <br>
-
-                    Exemplo correto:
-                    <br>
-                    <br>
-
-                    <span style="background: yellow; color: black;">
-                        &lt;h1&gt;Titulo&lt;/h1&gt;
-                    </span>
-                    <br>
-                    <br>
-
-                    <span style="background: yellow; color: black;">
-                        &lt;h2&gt;Sub Titulo&lt;/h2&gt;
-                    </span>
-                    <br>
-                    <br>
-
-                    Se você fechar errado, como por exemplo:
-                    <br>
-                    <span style="background: yellow; color: black;">
-                        &lt;h2&gt;Sub Titulo&lt;/h1&gt;
-                    </span>
-                    <br>
-                    o HTML pode ficar desorganizado.
-                    <br>
-                    <br>
-
-                    Agora é sua vez de treinar 🚀
+                    Sempre <span style="background: yellow; color: black;">abra e feche corretamente</span> as tags.
                 </p>
-
 
             </details>
             <br>
