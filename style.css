@@ -1179,7 +1179,97 @@ feita 100% com AI
     text-align: center;
   }
 }
+/*AJUSTE DOS JOGOS NO HOME*/
+/* ============================= */
+/* MOBILE PROFISSIONAL DEV TASK  */
+/* ============================= */
 
+@media (max-width: 768px) {
+  /* RESETAR MARGENS GRANDES */
+  .title-roadmap,
+  .title-game,
+  .div-aprender,
+  .fundo-divRoadMaps {
+    margin: 20px auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ORGANIZAR FLEX */
+  .quizgame,
+  .div-aprender,
+  .fundo-divRoadMaps,
+  .div-title-learn,
+  .detalhes-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  /* CARDS */
+  .nivel1,
+  .nivel2,
+  .nivel3,
+  .py,
+  .js,
+  .htmlcss,
+  .Roadmap,
+  .pergunta {
+    width: 92%;
+    padding: 20px;
+    margin: 15px auto;
+  }
+
+  /* LOGIN */
+  .login {
+    width: 92%;
+    margin: 60px auto;
+    padding: 25px;
+  }
+
+  /* DIMINUIR TÍTULOS */
+  .title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .titles2 {
+    font-size: 24px;
+  }
+
+  .niveis-text,
+  .linguagem {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  /* DIMINUIR IMAGENS */
+  .img-effect,
+  .img-roadmap,
+  .img-fundoLogin,
+  .img-fundoLearn,
+  .img-nivel {
+    width: 180px;
+  }
+
+  /* REMOVER SCALES EXAGERADOS NO MOBILE */
+  .login:hover,
+  .nivel1:hover,
+  .nivel2:hover,
+  .nivel3:hover,
+  .detalhes-smr:hover,
+  .Roadmap:hover,
+  .fundo-learn:hover {
+    transform: none;
+  }
+
+  /* LOGO BOARD */
+  .logoBoard {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
 /* ============================= */
 /* AJUSTE UNIVERSAL PARA IMAGENS */
 /* ============================= */

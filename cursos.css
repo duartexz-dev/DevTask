@@ -348,15 +348,16 @@ a {
   font-size: 50px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   border-bottom: solid;
-  margin-left: 400px;
-  margin-right: 400px;
+  margin: 40px auto;
+  max-width: 900px;
 }
 
 .welcome2 {
   color: white;
   text-align: center;
   opacity: 0;
-
+  margin: 40px auto;
+  max-width: 900px;
   transform: translateY(50px);
   animation: slideFade 1s forwards ease-out;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -372,14 +373,15 @@ a {
     bordaCor 1s linear infinite;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   border-bottom: solid;
-  margin-left: 600px;
-  margin-right: 600px;
+  margin: 40px auto;
+  max-width: 900px;
   margin-top: 100px;
 }
 
 .bemVindo {
   display: flex;
-  margin-left: 300px;
+  margin: 40px auto;
+  max-width: 900px;
   gap: 100px;
 }
 
@@ -587,7 +589,8 @@ a {
 .AulasSelect {
   display: flex;
   gap: 100px;
-  margin-left: 300px;
+  margin: 40px auto;
+  max-width: 900px;
 }
 
 /* =========================== */
@@ -670,7 +673,7 @@ a {
 .btn-confirmar {
   background-color: #307cff;
   color: white;
-  text-align: center;
+
   padding: 5px;
   border-radius: 40px;
   margin: 10px;
@@ -686,12 +689,16 @@ a {
 .exemplos {
   display: flex;
   gap: 50px;
-  margin-left: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .ex {
   position: relative;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background: linear-gradient(145deg, #141316, #0d0c12);
   border-radius: 40px;
   padding: 30px;
@@ -837,105 +844,153 @@ feita 100% com AI
 /* ============================= */
 /* LAYOUT MOBILE ADAPTADO        */
 /* ============================= */
+/* ========================================= */
+/*           MOBILE DEFINITIVO DEV TASK      */
+/* ========================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* ============================= */
+/* MEDIA QUERY PRINCIPAL MOBILE  */
+/* ============================= */
 
 @media (max-width: 768px) {
-  /* DIMINUIR DIVS PRINCIPAIS */
-  .detalhes-smr,
-  .detalhes-smr2,
-  .detalhes-smr3,
+  /* RESET GERAL DE MARGENS GRANDES */
+  .title-roadmap,
+  .title-game,
+  .div-aprender,
+  .fundo-divRoadMaps,
+  .div-title-learn,
+  .detalhes-div,
+  .quizgame {
+    margin: 20px auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  /* CARDS PRINCIPAIS */
   .nivel1,
   .nivel2,
   .nivel3,
   .py,
   .js,
-  .htmlcss {
-    width: 85%;
-    padding: 15px;
-    margin: 10px auto;
+  .htmlcss,
+  .Roadmap,
+  .pergunta,
+  .detalhes-smr,
+  .detalhes-smr2,
+  .detalhes-smr3 {
+    width: 100%;
+    max-width: 420px;
+    margin: 15px auto;
+    padding: 20px;
+    box-sizing: border-box;
   }
 
   /* LOGIN */
   .login {
-    width: 90%;
-    padding: 20px;
-    margin: 50px auto;
+    width: 100%;
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 25px;
+    box-sizing: border-box;
   }
 
-  /* PERGUNTAS */
-  .pergunta {
-    width: 90%;
-    padding: 20px;
-    margin-top: 20px;
-  }
-
-  /* DIV APRENDER / ROADMAP */
-  .div-aprender,
-  .fundo-divRoadMaps,
-  .div-title-learn,
-  .title-roadmap,
-  .title-game {
+  /* LOGO BOARD */
+  .logoBoard {
+    display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-left: auto;
-    margin-right: auto;
     align-items: center;
+    gap: 20px;
+    text-align: center;
   }
 
-  /* DIMINUIR IMAGENS */
+  /* TÍTULOS RESPONSIVOS */
+  .title {
+    font-size: clamp(22px, 5vw, 28px);
+    text-align: center;
+  }
+
+  .titles2 {
+    font-size: clamp(20px, 4.5vw, 24px);
+  }
+
+  .niveis-text,
+  .linguagem {
+    font-size: clamp(18px, 4vw, 22px);
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  /* BOTÕES */
+  .btn,
+  .btn-confirmar {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  /* IMAGENS */
   .img-effect,
   .img-roadmap,
   .img-fundoLogin,
   .img-fundoLearn,
   .img-nivel,
   .logoBoard img {
-    width: 150px;
+    width: 100%;
+    max-width: 180px;
     height: auto;
   }
 
-  /* TEXTOS E BOTÕES */
-  .texts,
-  .title,
-  .title-rdmp,
-  .AEIO,
-  .ABC {
-    font-size: 16px;
-    text-align: center;
+  /* REMOVER TRANSFORM NO MOBILE */
+  .login:hover,
+  .nivel1:hover,
+  .nivel2:hover,
+  .nivel3:hover,
+  .detalhes-smr:hover,
+  .Roadmap:hover,
+  .fundo-learn:hover {
+    transform: none;
   }
 
-  .btn-confirmar,
-  .btn {
-    padding: 8px;
-    font-size: 14px;
-  }
-
-  /* FONTES DAS LINGUAGENS */
-  .linguagem,
-  .niveis-text {
-    font-size: 20px;
-    letter-spacing: 2px;
-  }
-
-  /* RODAPÉ */
-  footer {
-    font-size: 16px;
-    padding-bottom: 50px;
-  }
-
-  /* OVERLAY / GAME OVER CENTRALIZADO */
+  /* CENTRALIZAR OVERLAYS */
   .overlay,
   .game-over,
   .welcome {
     width: 100%;
     text-align: center;
+    padding: 20px;
   }
 }
 
 /* ============================= */
-/* AJUSTE UNIVERSAL PARA IMAGENS */
+/* AJUSTE UNIVERSAL DE IMAGENS   */
 /* ============================= */
+
 img {
   max-width: 100%;
   height: auto;
+  display: block;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
 }
 /*---
 Este css esta em vários htmls por isso ele está bagunçado.

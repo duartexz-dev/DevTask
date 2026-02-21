@@ -1,42 +1,140 @@
 body {
   overflow-x: hidden;
   margin: 0;
-  animation: bgColor 4s ease-in-out infinite alternate;
-  scroll-behavior: smooth;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: linear-gradient(to right, rgb(0, 0, 17), rgb(1, 1, 39));
 }
-
+body::before {
+  content: "";
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(48, 124, 255, 0.3), transparent);
+  top: -200px;
+  left: -200px;
+  z-index: -1;
+  filter: blur(120px);
+}
 .logoBoard {
-  background-color: rgb(6, 1, 156);
+  position: relative;
+  overflow: hidden;
+
   display: flex;
-  padding: 10px;
-  animation: fundo 2s infinite alternate;
-}
-.title {
-  color: white;
-  font-size: 40px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 200px;
+
+  padding: 20px 40px;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+
+  /* fundo animado gradiente azul */
+  background: linear-gradient(90deg, #224eff, #0044ff, #0a0027, #0a1758);
+  background-size: 400% 100%;
+  animation: azulGradient 8s ease infinite;
 }
 
-.titles {
+/* animação gradiente azul */
+@keyframes azulGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* glow azul suave atrás */
+.logoBoard::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(0, 140, 255, 0.25), transparent 70%);
+  filter: blur(60px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* ========================= */
+/* DEV TASK */
+.title {
+  position: relative;
+  z-index: 2;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: 2px;
   color: white;
-  font-size: 35px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  border-bottom: solid;
-  animation: bordaCor2 2s linear infinite;
-  text-align: center;
-  margin-left: 550px;
-  margin-right: 550px;
+
+  text-shadow:
+    0 0 8px rgba(0, 140, 255, 0.7),
+    0 0 20px rgba(0, 110, 255, 0.5);
+
+  transition: transform 0.3s ease;
+}
+
+.title:hover {
+  transform: scale(1.05);
+}
+
+/* ========================= */
+/* DETALHES */
+.detalhes-div {
+  display: flex;
+  gap: 70px;
+  perspective: 1000px;
+  z-index: 2;
 }
 
 .detalhes-smr {
+  padding: 20px 25px;
+  border-radius: 15px;
+
+  background: linear-gradient(145deg, #0c163f, #0a112b);
+
   color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 30px;
-  border-bottom: solid white;
+  font-size: 18px;
+  font-family: "Segoe UI", sans-serif;
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(0, 110, 255, 0.3);
+
+  transform-style: preserve-3d;
+  transition: 0.4s ease;
+
   cursor: pointer;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  z-index: 2;
+}
+
+.detalhes-smr:hover {
+  transform: rotateY(8deg) rotateX(4deg) scale(1.08);
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.8),
+    0 0 35px rgba(0, 140, 255, 0.7),
+    0 0 60px rgba(0, 110, 255, 0.5);
+}
+
+.detalhes {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #c6d4ff;
+  text-align: center;
 }
 
 .titles2 {
@@ -46,8 +144,6 @@ body {
   border-bottom: solid;
   animation: bordaCor2 2s linear infinite;
   text-align: center;
-  margin-left: 450px;
-  margin-right: 450px;
 }
 
 .welcome {
@@ -381,105 +477,153 @@ feita 100% com AI
 /* ============================= */
 /* LAYOUT MOBILE ADAPTADO        */
 /* ============================= */
+/* ========================================= */
+/*           MOBILE DEFINITIVO DEV TASK      */
+/* ========================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* ============================= */
+/* MEDIA QUERY PRINCIPAL MOBILE  */
+/* ============================= */
 
 @media (max-width: 768px) {
-  /* DIMINUIR DIVS PRINCIPAIS */
-  .detalhes-smr,
-  .detalhes-smr2,
-  .detalhes-smr3,
+  /* RESET GERAL DE MARGENS GRANDES */
+  .title-roadmap,
+  .title-game,
+  .div-aprender,
+  .fundo-divRoadMaps,
+  .div-title-learn,
+  .detalhes-div,
+  .quizgame {
+    margin: 20px auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  /* CARDS PRINCIPAIS */
   .nivel1,
   .nivel2,
   .nivel3,
   .py,
   .js,
-  .htmlcss {
-    width: 85%;
-    padding: 15px;
-    margin: 10px auto;
+  .htmlcss,
+  .Roadmap,
+  .pergunta,
+  .detalhes-smr,
+  .detalhes-smr2,
+  .detalhes-smr3 {
+    width: 100%;
+    max-width: 420px;
+    margin: 15px auto;
+    padding: 20px;
+    box-sizing: border-box;
   }
 
   /* LOGIN */
   .login {
-    width: 90%;
-    padding: 20px;
-    margin: 50px auto;
+    width: 100%;
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 25px;
+    box-sizing: border-box;
   }
 
-  /* PERGUNTAS */
-  .pergunta {
-    width: 90%;
-    padding: 20px;
-    margin-top: 20px;
-  }
-
-  /* DIV APRENDER / ROADMAP */
-  .div-aprender,
-  .fundo-divRoadMaps,
-  .div-title-learn,
-  .title-roadmap,
-  .title-game {
+  /* LOGO BOARD */
+  .logoBoard {
+    display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-left: auto;
-    margin-right: auto;
     align-items: center;
+    gap: 20px;
+    text-align: center;
   }
 
-  /* DIMINUIR IMAGENS */
+  /* TÍTULOS RESPONSIVOS */
+  .title {
+    font-size: clamp(22px, 5vw, 28px);
+    text-align: center;
+  }
+
+  .titles2 {
+    font-size: clamp(20px, 4.5vw, 24px);
+  }
+
+  .niveis-text,
+  .linguagem {
+    font-size: clamp(18px, 4vw, 22px);
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  /* BOTÕES */
+  .btn,
+  .btn-confirmar {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  /* IMAGENS */
   .img-effect,
   .img-roadmap,
   .img-fundoLogin,
   .img-fundoLearn,
   .img-nivel,
   .logoBoard img {
-    width: 150px;
+    width: 100%;
+    max-width: 180px;
     height: auto;
   }
 
-  /* TEXTOS E BOTÕES */
-  .texts,
-  .title,
-  .title-rdmp,
-  .AEIO,
-  .ABC {
-    font-size: 16px;
-    text-align: center;
+  /* REMOVER TRANSFORM NO MOBILE */
+  .login:hover,
+  .nivel1:hover,
+  .nivel2:hover,
+  .nivel3:hover,
+  .detalhes-smr:hover,
+  .Roadmap:hover,
+  .fundo-learn:hover {
+    transform: none;
   }
 
-  .btn-confirmar,
-  .btn {
-    padding: 8px;
-    font-size: 14px;
-  }
-
-  /* FONTES DAS LINGUAGENS */
-  .linguagem,
-  .niveis-text {
-    font-size: 20px;
-    letter-spacing: 2px;
-  }
-
-  /* RODAPÉ */
-  footer {
-    font-size: 16px;
-    padding-bottom: 50px;
-  }
-
-  /* OVERLAY / GAME OVER CENTRALIZADO */
+  /* CENTRALIZAR OVERLAYS */
   .overlay,
   .game-over,
   .welcome {
     width: 100%;
     text-align: center;
+    padding: 20px;
   }
 }
 
 /* ============================= */
-/* AJUSTE UNIVERSAL PARA IMAGENS */
+/* AJUSTE UNIVERSAL DE IMAGENS   */
 /* ============================= */
+
 img {
   max-width: 100%;
   height: auto;
+  display: block;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
 }
 /*---
 Este css esta em vários htmls por isso ele está bagunçado.
