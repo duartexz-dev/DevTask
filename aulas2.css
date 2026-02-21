@@ -1,211 +1,200 @@
 body {
-    overflow-x: hidden;
-    margin: 0 ;
-    animation: bgColor 4s ease-in-out infinite alternate;
-    scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 0;
+  animation: bgColor 4s ease-in-out infinite alternate;
+  scroll-behavior: smooth;
 }
 
 .logoBoard {
-    background-color: rgb(6, 1, 156);
-    display: flex;
-    padding: 10px;
-    animation: fundo 2s infinite alternate;
-
+  background-color: rgb(6, 1, 156);
+  display: flex;
+  padding: 10px;
+  animation: fundo 2s infinite alternate;
 }
 .title {
-    color: white;
-    font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+  color: white;
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.titles{
-    color: white;
-    font-size: 35px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-bottom: solid;
-    animation: bordaCor2 2s linear infinite;
-    text-align: center;
-    margin-left: 550px;
-    margin-right: 550px;
+.titles {
+  color: white;
+  font-size: 35px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-bottom: solid;
+  animation: bordaCor2 2s linear infinite;
+  text-align: center;
+  margin-left: 550px;
+  margin-right: 550px;
 }
 
 .detalhes-smr {
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-    border-bottom: solid white;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  border-bottom: solid white;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .titles2 {
-    color: white;
-    font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-bottom: solid;
-    animation: bordaCor2 2s linear infinite;
-    text-align: center;
-    margin-left: 450px;
-    margin-right: 450px;
-
+  color: white;
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-bottom: solid;
+  animation: bordaCor2 2s linear infinite;
+  text-align: center;
+  margin-left: 450px;
+  margin-right: 450px;
 }
-
-
 
 .welcome {
-    color: white;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(50px);
-    animation: slideFade 1.0s forwards ease-out, flutuar 3s ease-in-out infinite, bordaCor2 2s linear infinite;
-    font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-bottom: solid;
-
-
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  animation:
+    slideFade 1s forwards ease-out,
+    flutuar 3s ease-in-out infinite,
+    bordaCor2 2s linear infinite;
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-bottom: solid;
 }
-
 
 .img-profs {
-    border-radius: 50%;
-    animation: flutuar 2s infinite ease-out;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 10px;
+  border-radius: 50%;
+  animation: flutuar 2s infinite ease-out;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  margin: 10px;
 }
-
-
 
 .welcome2 {
-    color: white;
-    text-align: center;
-    opacity: 0;
+  color: white;
+  text-align: center;
+  opacity: 0;
 
-    transform: translateY(50px);
-    animation: slideFade 1.0s forwards ease-out;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+  transform: translateY(50px);
+  animation: slideFade 1s forwards ease-out;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-
 @keyframes bordaCor2 {
-    0% {
-        border-color: rgb(0, 51, 255);
-    }
+  0% {
+    border-color: rgb(0, 51, 255);
+  }
 
-    33% {
-        border-color: blue;
-    }
+  33% {
+    border-color: blue;
+  }
 
-    66% {
-        border-color: rgb(20, 0, 135);
-    }
+  66% {
+    border-color: rgb(20, 0, 135);
+  }
 
-    100% {
-        border-color: rgb(0, 140, 255);
-    }
+  100% {
+    border-color: rgb(0, 140, 255);
+  }
 }
 
 @keyframes slideFade {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .detalhes {
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    text-align: center;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
 
 .detalhes-div {
-    display: flex;
-    gap: 150px;
-    margin-top: 35px;
-    margin-bottom: 35px;
-   text-align: center;
-
-
+  display: flex;
+  gap: 150px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
 
 @keyframes fundo {
-    0% {
-        background-color: #1e00ff;
-    }
+  0% {
+    background-color: #1e00ff;
+  }
 
-    50% {
-        background-color: #307cff;
-    }
+  50% {
+    background-color: #307cff;
+  }
 
-    100% {
-        background-color: #2600ff;
-    }
+  100% {
+    background-color: #2600ff;
+  }
 }
 
-
 @keyframes bgColor {
-    0% {
-        background-color: #00001e;
-    }
+  0% {
+    background-color: #00001e;
+  }
 
-    50% {
-        background-color: #000418;
-    }
+  50% {
+    background-color: #000418;
+  }
 
-    100% {
-        background-color: #020024;
-    }
+  100% {
+    background-color: #020024;
+  }
 }
 
 .detalhes-smr:hover {
-    transform: scale(1.2);
-    /* aumenta 10% */
-    box-shadow: 0 8px 20px rgba(4, 131, 251, 0.945);
-    /* sombra para dar efeito de "aproximação" */
+  transform: scale(1.2);
+  /* aumenta 10% */
+  box-shadow: 0 8px 20px rgba(4, 131, 251, 0.945);
+  /* sombra para dar efeito de "aproximação" */
 }
 
 .btn-confirmar:hover {
-    transform: scale(1.1);
-    /* aumenta 10% */
-    box-shadow: 0 8px 20px rgba(4, 131, 251, 0.945);
-    /* sombra para dar efeito de "aproximação" */
+  transform: scale(1.1);
+  /* aumenta 10% */
+  box-shadow: 0 8px 20px rgba(4, 131, 251, 0.945);
+  /* sombra para dar efeito de "aproximação" */
 }
 
 .detalhes-smr2:hover {
-    transform: scale(1.1);
-    /* aumenta 10% */
-    box-shadow: 0 8px 20px rgba(4, 131, 251, 0.945);
-    /* sombra para dar efeito de "aproximação" */
+  transform: scale(1.1);
+  /* aumenta 10% */
+  box-shadow: 0 8px 20px rgba(4, 131, 251, 0.945);
+  /* sombra para dar efeito de "aproximação" */
 }
 
 .detalhes-smr3:hover {
-    transform: scale(1.1);
-    /* aumenta 10% */
-    box-shadow: 0 8px 20px rgba(4, 131, 251, 0.945);
-    /* sombra para dar efeito de "aproximação" */
+  transform: scale(1.1);
+  /* aumenta 10% */
+  box-shadow: 0 8px 20px rgba(4, 131, 251, 0.945);
+  /* sombra para dar efeito de "aproximação" */
 }
 
 .ABC:hover {
-    transform: scale(1.3);
-
-
+  transform: scale(1.3);
 }
 
 .video:hover {
-    transform: scale(1.1);
-    /* aumenta 10% */
-    box-shadow: 0 10px 30px rgba(4, 131, 251, 0.945);
-    /* sombra para dar efeito de "aproximação" */
+  transform: scale(1.1);
+  /* aumenta 10% */
+  box-shadow: 0 10px 30px rgba(4, 131, 251, 0.945);
+  /* sombra para dar efeito de "aproximação" */
 }
 
 .leyout2 {
@@ -224,111 +213,108 @@ a {
   font-weight: bold;
 }
 
-
-
 .importante {
-    background-color: yellow;
-    color: black;
-    padding: 2px 4px;
-    border-radius: 4px;
+  background-color: yellow;
+  color: black;
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 .detalhes2 {
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    text-align: center;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
 
 @keyframes digitar {
-    0% {
-        width: 0;
-    }
+  0% {
+    width: 0;
+  }
 
-    40% {
-        width: 100%;
-    }
+  40% {
+    width: 100%;
+  }
 
-    60% {
-        width: 100%;
-    }
+  60% {
+    width: 100%;
+  }
 
-    100% {
-        width: 0;
-    }
+  100% {
+    width: 0;
+  }
 }
 
-
 .title-roadmap {
-    display: flex;
-    gap: 100px;
-    margin-left: 300px;
-    margin-bottom: 100px;
-    margin-top: 100px;
+  display: flex;
+  gap: 100px;
+  margin-left: 300px;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 .ABC {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 50px;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  margin-top: 50px;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
 }
 
 .img-profs:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(132, 4, 251, 0.945);
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(132, 4, 251, 0.945);
 }
 
 .title-rdmp {
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-bottom: solid blue;
-    text-align: center;
-
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-bottom: solid blue;
+  text-align: center;
 }
 
 .leyout {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
- gap: 50px;
- 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
-
-.aD{
-    margin: 50px;
+.aD {
+  margin: 50px;
 }
 
 .aula {
-    background-color: #121212;
-    padding: 20px;
-    border-radius: 100px;
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 100px;
 }
 
 .video {
-    border-radius: 50px;
-    border: solid white;
-    transition: transform 0.5s ease, box-shadow 0.3s ease;
+  border-radius: 50px;
+  border: solid white;
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.3s ease;
 }
 
 .nA {
-    font-family: monospace;
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-    animation: digitar 6s steps(20) infinite;
-    color: white;
-    font-size: 20px;
-    font-size: 60px;
-
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: digitar 6s steps(20) infinite;
+  color: white;
+  font-size: 20px;
+  font-size: 60px;
 }
 
 .detalhes-smr3 {
   background: #0f03fb;
   color: white;
   width: 600px;
-  border: solid  blue;
+  border: solid blue;
   border-radius: 100px;
   height: 100px;
   display: flex;
@@ -337,9 +323,10 @@ a {
   cursor: pointer;
   position: relative;
   overflow: hidden;
-   transition: transform 0.5s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.3s ease;
 }
-
 
 /* texto inicial */
 .detalhes-smr3 .antes {
@@ -364,25 +351,137 @@ a {
 }
 
 .directs {
-    border-top: solid rgb(35, 35, 35);
+  border-top: solid rgb(35, 35, 35);
 }
-.btn{
-    background-color: rgb(54, 54, 254);
-    color: white;
-    border-radius: 10px;
-    padding: 10px;
+.btn {
+  background-color: rgb(54, 54, 254);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 footer {
-    background-color:  rgb(20, 20, 20);
-    padding-bottom: 100px;
-    color:rgb(67, 67, 67);
-    margin: 0;
-    text-align: center;
-    box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    margin-top: 100px;
-   
-
+  background-color: rgb(20, 20, 20);
+  padding-bottom: 100px;
+  color: rgb(67, 67, 67);
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  margin-top: 100px;
 }
+/*---
+
+Abaixo temos a adaptação simples do leyout.
+feita 100% com AI
+
+---*/
+/* ============================= */
+/* LAYOUT MOBILE ADAPTADO        */
+/* ============================= */
+
+@media (max-width: 768px) {
+  /* DIMINUIR DIVS PRINCIPAIS */
+  .detalhes-smr,
+  .detalhes-smr2,
+  .detalhes-smr3,
+  .nivel1,
+  .nivel2,
+  .nivel3,
+  .py,
+  .js,
+  .htmlcss {
+    width: 85%;
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  /* LOGIN */
+  .login {
+    width: 90%;
+    padding: 20px;
+    margin: 50px auto;
+  }
+
+  /* PERGUNTAS */
+  .pergunta {
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  /* DIV APRENDER / ROADMAP */
+  .div-aprender,
+  .fundo-divRoadMaps,
+  .div-title-learn,
+  .title-roadmap,
+  .title-game {
+    flex-direction: column;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+
+  /* DIMINUIR IMAGENS */
+  .img-effect,
+  .img-roadmap,
+  .img-fundoLogin,
+  .img-fundoLearn,
+  .img-nivel,
+  .logoBoard img {
+    width: 150px;
+    height: auto;
+  }
+
+  /* TEXTOS E BOTÕES */
+  .texts,
+  .title,
+  .title-rdmp,
+  .AEIO,
+  .ABC {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .btn-confirmar,
+  .btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  /* FONTES DAS LINGUAGENS */
+  .linguagem,
+  .niveis-text {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  /* RODAPÉ */
+  footer {
+    font-size: 16px;
+    padding-bottom: 50px;
+  }
+
+  /* OVERLAY / GAME OVER CENTRALIZADO */
+  .overlay,
+  .game-over,
+  .welcome {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ============================= */
+/* AJUSTE UNIVERSAL PARA IMAGENS */
+/* ============================= */
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*---
+Este css esta em vários htmls por isso ele está bagunçado.
+(OBS: esses códigos foram feitos 70% por min com as Animações e alguns 
+Efeitos feitos com o ChatGPT).
+---*/
