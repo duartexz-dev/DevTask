@@ -86,7 +86,6 @@
                 <p>
                     Eai <strong>Pequeno Player</strong>! 👾<br>
                 <h3 style="text-align: center;">
-
                     O jogo contén 6 perguntas. <br>
                     E você tem 3 vidas. <br>
                     1 pergunta errada = -1 vida <br>
@@ -95,6 +94,7 @@
                     escrito: estude mais , <br>
                     para você tentar novamente , apenas <br>
                     reinicie a página. <br>
+
 
                 </h3>
                 </p>
@@ -111,7 +111,8 @@
 
 
         <img style="border: none; " class="img-effect"
-            src="https://cdn3d.iconscout.com/3d/premium/thumb/python-6815592-5602757.png" width="300px">
+            src="https://cdn3d.iconscout.com/3d/free/thumb/free-javascript-3d-icon-download-in-png-blend-fbx-gltf-file-formats--html-logo-vue-angular-coding-lang-pack-logos-icons-7577991.png"
+            width="300px">
 
     </div>
 
@@ -128,10 +129,14 @@
             <br>
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
+                Qual será o resultado deste comando abaixo? <br>
 
-                Qual será o resultado desse comando? <br>
-                <strong style="background-color: yellow; color: black;">c = 1 <br>
-                    while c <= 10: <br> print(c) <br> c +=1 </strong>
+                <strong style="background-color: yellow; color: black;">let c = 1 <br>
+                    while (c <= 10){ <br>
+                        console.log(c) <br>
+                        c++ <br>
+                        } <br>
+                </strong>
 
 
             </h3>
@@ -140,13 +145,11 @@
             <h1 id="res1"></h1>
 
 
-            <button id="btn-certo1" style=" margin: 10px;" class="detalhes-smr" onclick="certo1()">
+            <button id="btn-certo1" style=" margin: 10px;" class="detalhes-smr" onclick="certo1()">1,2,3,4,5,6,7,8,9,10
+                em coluna </button> <br>
+            <button id="btn-errado2" style="margin: 10px;" class="detalhes-smr"
+                onclick="errado1()">1,1,1,1,1,1,1,1,1,1...... em coluna</button>
 
-                1,2,3,4,5,6,7,8,9,10 em coluna.
-
-            </button> <br>
-            <button id="btn-errado2" style="margin: 10px;" class="detalhes-smr" onclick="errado1()">Cria um função que
-                retorna "c". </button>
 
 
 
@@ -160,13 +163,10 @@
             <br>
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
-                Qual será o resultado desse código? <br>
+                O que o comando abaixo faz?<br>
                 <strong style="background-color: yellow; color: black;">
-                    idade = 17 <br>
-                    if idade >= 18: <br>
-                    print("Pode Votar!") <br>
-                    else: <br>
-                    print("Não pode Votar!") <br></strong>
+                    let alunos = ["Maria","Amanda","Marcos","David"]
+                </strong>
 
 
 
@@ -176,9 +176,11 @@
             <h1 id="res2"></h1>
 
 
-            <button id="btn-certo3" style=" margin: 10px;" class="detalhes-smr" onclick="certo2()">Não pode
-                Votar!</button>
-            <button id="btn-errado4" style="margin: 10px;" class="detalhes-smr" onclick="errado2()">Pode Votar!
+            <button id="btn-certo3" style=" margin: 10px;" class="detalhes-smr" onclick="certo2()">Cria um array com os
+                alunos.
+            </button> <br>
+            <button id="btn-errado4" style="margin: 10px;" class="detalhes-smr" onclick="errado2()">Cria uma vaiável que
+                não pode ser alterada.
             </button>
 
 
@@ -193,12 +195,7 @@
             <br>
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
-
-                Oque é esse comando e oque ele faz? <br>
-                <strong style="background-color: yellow; color: black;"> def saudacao(): <br>
-                    print("Olá") <br>
-
-                    saudacao() <br></strong><br>
+                Qual é a forma correta de criar uma function em JavaScript?
 
 
 
@@ -208,10 +205,13 @@
             <h1 id="res3"></h1>
 
 
-            <button id="btn-errado5" style=" margin: 10px;" class="detalhes-smr" onclick="errado3()">
-                é um repetidor e ele efetua o comando Olá.</button> <br>
-            <button id="btn-certo6" style="margin: 10px;" class="detalhes-smr" onclick="certo3()">
-                É uma Function , e ela mostra Olá após ser acionada.</button>
+            <button id="btn-errado5" style=" margin: 10px;" class="detalhes-smr" onclick="errado3()"> While(){<br>
+                }
+            </button> <br>
+            <button id="btn-certo6" style="margin: 10px;" class="detalhes-smr" onclick="certo3()">function
+                NameFunction(){ <br>
+                }
+            </button>
 
 
 
@@ -230,16 +230,16 @@
             <h3 style="text-align: center; border-bottom:solid blue ;">
 
                 Oque esse código irá exibir? <br>
-                <strong style="background-color: yellow; color: black;">alunos = ["Arthur", "David", "Marcos"] <br>
-                    print(alunos[0])</strong>
+                <strong style="background-color: yellow; color: black;">let nome = ["Arthur","David"] <br>
+                    console.log(`${nome[1]} tem 14 anos`)</strong>
 
             </h3>
             <h1 id="res4"></h1>
 
 
-            <button id="btn-errado8" style=" margin: 10px;" class="detalhes-smr" onclick="errado4()">indefined.
+            <button id="btn-errado8" style=" margin: 10px;" class="detalhes-smr" onclick="errado4()">Arthur tem 14 anos
             </button>
-            <button id="btn-certo7" style="margin: 10px;" class="detalhes-smr" onclick="certo4()"> Arthur
+            <button id="btn-certo7" style="margin: 10px;" class="detalhes-smr" onclick="certo4()"> David tem 14 anos
             </button>
 
 
@@ -256,12 +256,16 @@
             <h3 style="text-align: center; border-bottom:solid blue ;">
 
                 Qual será o resultado desse código: <br>
-                <strong style="background-color: yellow; color: black;">
-                    Nome = "Junior" <br>
-                    Idade = 25 <br>
-                    Cargo = "Sênior" <br>
+                <strong style="background-color: yellow; color: black;"> let idade = 18 <br>
+                    let carteira = true
 
-                    print(f"{Nome} tem {Idade} anos e seu cargo é dev {Cargo}")</strong> <br>
+                    if (idade >= 18 && carteira == true) { <br>
+
+                    console.log("Apto") <br>
+
+                    } else { <br>
+                    console.log("inapto") <br>
+                    } </strong>
 
             </h3>
 
@@ -269,12 +273,12 @@
             <h1 id="res5"></h1>
 
 
-            <button id="btn-errado10" style=" margin: 10px;" class="detalhes-smr" onclick="errado5()"> f"{Nome} tem
-                {Idade} anos e seu cargo é dev {Cargo}" <br>
+            <button id="btn-errado10" style=" margin: 10px;" class="detalhes-smr" onclick="errado5()">
+                inapto <br>
             </button>
             <br>
-            <button id="btn-certo9" style="margin: 10px;" class="detalhes-smr" onclick="certo5()"> Junior tem 25 anos
-                anos e seu cargo é dev Sênior.
+            <button id="btn-certo9" style="margin: 10px;" class="detalhes-smr" onclick="certo5()">
+                Apto
             </button>
 
 
@@ -291,14 +295,8 @@
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
 
-                Qual a diferença entre esses dois códigos? <br>
-                <strong style="background-color: yellow; color: black;">
-                    nomes = ["Arthur", "Pedro"]
-                </strong>
-                <br>
-                <strong style="background-color: yellow; color: black;">
-                    nomes = ("Arthur", "Pedro")
-                </strong>
+                Oque significa "Return" e oque <br>
+                é possivel fazer com ele ?
 
             </h3>
 
@@ -306,16 +304,19 @@
             <h1 id="res6"></h1>
 
 
-            <button id="btn-errado11" style=" margin: 10px;" class="detalhes-smr" onclick="errado6()">Nenhuma pois são
-                iguais na visão do console.
+            <button id="btn-errado11" style=" margin: 10px;" class="detalhes-smr" onclick="errado6()">retorn significa
+                "retorna" <br>
+                e conseguimos excluir valores com ele .
             </button><br>
-            <button id="btn-certo12" style="margin: 10px;" class="detalhes-smr" onclick="certo6()"> A primeira pode ser
-                alterada e a segunda não.
+            <button id="btn-certo12" style="margin: 10px;" class="detalhes-smr" onclick="certo6()">
+                return significa
+                "Retorno" e <br> conseguimos retornar valores com ele.
             </button>
 
 
 
         </div>
+
         <button style="margin: 10px;" class="detalhes-smr" onclick="vidasWin()">
             Click em min para ver seu resultado
         </button>
@@ -339,20 +340,6 @@
 
 
     <script src="quiz.js"></script>
-
-
-
-</body>
-
-
-
-
-
-
-</div>
-
-
-<script src="quiz.js"></script>
 
 
 
