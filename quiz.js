@@ -177,12 +177,15 @@ function vidasWin() {
     let res = document.getElementById("result")
     //abaixo tem uma linha de código feita com ia//
     let overlay = document.getElementById("overlay")
+    let overlay2 = document.getElementById("overlay2")
 
 
     if (vidas > 0 && vidas < 3) {
-        res.innerHTML = `Parabéns você ganhou com ${vidas} vidas`
+
+        res.innerHTML = `Parabéns você ganhou com ${vidas} vidas!`
     } else if (vidas === 3) {
-        res.innerHTML = `Parabéns!!!, você ganhou invicto com <br> ${vidas} vidas , você ja pode ir para o próximo nivel!!!`
+        //abaixo tem um código feito 100% com IA//
+        overlay2.classList.add("active")
     } else {
         res.innerHTML = "💀 Estude mais ."
 

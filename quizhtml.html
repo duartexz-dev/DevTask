@@ -111,8 +111,7 @@
         </div>
 
 
-        <img style="border: none; " class="img-effect"
-            src="https://cdn3d.iconscout.com/3d/free/thumb/free-javascript-3d-icon-download-in-png-blend-fbx-gltf-file-formats--html-logo-vue-angular-coding-lang-pack-logos-icons-7577991.png"
+        <img style="border: none; border-radius: 0%; " class="img-effect" src="https://logodix.com/logo/470216.png"
             width="300px">
 
     </div>
@@ -131,12 +130,11 @@
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
 
-                Um programador cria 3 variáveis , a primeira contém <br>
-                o nome de n1 a segunda de n2 e a terceira de n3. <br>
-                com os seguintes valores : <br>
-                <strong style="background-color: yellow; color: black;">let n1 = 20 let n2 = 20 let n3 = 2</strong> <br>
-                após isso ele efetua este comando: <strong
-                    style="background-color: yellow; color: black;">cosnsole.log(n1+n2/n3)</strong>
+                Como fazer esse texto em html?:
+
+                <h1>Titulo</h1> <br>
+                <h2>SubTitulo</h2> <br>
+                <p>Conteúdo</p>
 
 
             </h3>
@@ -145,8 +143,16 @@
             <h1 id="res1"></h1>
 
 
-            <button id="btn-certo1" style=" margin: 10px;" class="detalhes-smr" onclick="certo1()">30</button>
-            <button id="btn-errado2" style="margin: 10px;" class="detalhes-smr" onclick="errado1()">n1+n2/n3</button>
+            <button id="btn-certo1" style=" margin: 10px;" class="detalhes-smr" onclick="certo1()">
+                &lt;h1&gt;Titulo&lt;/h1&gt; <br>
+                &lt;h2&gt;SubTitulo&lt;/h2&gt; <br>
+                &lt;p&gt;Conteúdo&lt;/p&gt;
+            </button>
+            <button id="btn-errado2" style="margin: 10px;" class="detalhes-smr" onclick="errado1()">
+                <p>Titulo</p>
+                <p>SubTitulo</p>
+                <p>Conteúdo</p>
+            </button>
 
 
 
@@ -163,7 +169,9 @@
             <h3 style="text-align: center; border-bottom:solid blue ;">
                 O que o comando abaixo faz?<br>
                 <strong style="background-color: yellow; color: black;">
-                    console.log("Olá mundo")
+                    <code>
+&lt;input type="text" placeholder="Digite algo aqui"&gt;
+</code>
                 </strong>
 
 
@@ -174,10 +182,11 @@
             <h1 id="res2"></h1>
 
 
-            <button id="btn-certo3" style=" margin: 10px;" class="detalhes-smr" onclick="certo2()">Mostra Olá mundo
-                .</button>
-            <button id="btn-errado4" style="margin: 10px;" class="detalhes-smr" onclick="errado2()">Mostra
-                console.log("Olá mundo")</button>
+            <button id="btn-certo3" style=" margin: 10px;" class="detalhes-smr" onclick="certo2()">Cria um input que só
+                recebe textos.
+            </button><br>
+            <button id="btn-errado4" style="margin: 10px;" class="detalhes-smr" onclick="errado2()">Cria um input que
+                recebe todo tipo de texto ou número.</button>
 
 
 
@@ -191,9 +200,15 @@
             <br>
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
-                Qual é a forma correta de criar uma variável em JavaScript?
+                Como criar uma lista em Html?
 
-
+                <strong style="background-color: yellow; color: rgb(225, 255, 0);">
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </strong>
 
 
             </h3>
@@ -201,10 +216,22 @@
             <h1 id="res3"></h1>
 
 
-            <button id="btn-errado5" style=" margin: 10px;" class="detalhes-smr" onclick="errado3()"> nome =
-                valor</button> <br>
+            <button id="btn-errado5" style=" margin: 10px;" class="detalhes-smr" onclick="errado3()">
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </button> <br>
             <button id="btn-certo6" style="margin: 10px;" class="detalhes-smr" onclick="certo3()">
-                let nome = valor</button>
+                <pre>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+            </button>
 
 
 
@@ -223,16 +250,21 @@
             <h3 style="text-align: center; border-bottom:solid blue ;">
 
                 Oque esse código irá exibir? <br>
-                <strong style="background-color: yellow; color: black;">console.log("5" + "5")</strong>
+                <strong style="background-color: yellow; color: rgb(255, 238, 0);">
+                    <pre>
+&lt;button&gt;Clique aqui&lt;/button&gt;
+</pre>
+                </strong>
 
             </h3>
             <h1 id="res4"></h1>
 
 
-            <button id="btn-errado8" style=" margin: 10px;" class="detalhes-smr" onclick="errado4()">"5" + "5"
-            </button>
-            <button id="btn-certo7" style="margin: 10px;" class="detalhes-smr" onclick="certo4()"> 55
-            </button>
+            <button id="btn-errado8" style=" margin: 10px;" class="detalhes-smr" onclick="errado4()">
+                <h4>clique em min</h4>
+            </button> <br>
+            <button id="btn-certo7" style="margin: 10px;" class="detalhes-smr" onclick="certo4()"> Um botão escrito
+                clique em min </button>
 
 
 
@@ -248,9 +280,14 @@
             <h3 style="text-align: center; border-bottom:solid blue ;">
 
                 Qual será o resultado desse código: <br>
-                <strong style="background-color: yellow; color: black;">let Nome = "Anderson" <br>
-                    let Idade = 23 <br>
-                    console.log(`${Nome} tem ${Idade} anos de idade.`)</strong>
+                <strong style=" color: rgb(255, 247, 0);">
+                    <pre>
+&lt;details&gt;
+    &lt;summary&gt;Clique para abrir&lt;/summary&gt;
+    &lt;p&gt;Conteúdo escondido aqui&lt;/p&gt;
+&lt;/details&gt;
+</pre>
+                </strong>
 
             </h3>
 
@@ -258,12 +295,17 @@
             <h1 id="res5"></h1>
 
 
-            <button id="btn-errado10" style=" margin: 10px;" class="detalhes-smr" onclick="errado5()">${Nome} tem
-                ${Idade} anos de idade. <br>
+            <button id="btn-errado10" style=" margin: 10px;" class="detalhes-smr" onclick="errado5()">
+                <pre>
+&lt;details&gt;
+    &lt;summary&gt;Clique para abrir&lt;/summary&gt;
+    &lt;p&gt;Conteúdo escondido aqui&lt;/p&gt;
+&lt;/details&gt;
+</pre> <br>
             </button>
             <br>
-            <button id="btn-certo9" style="margin: 10px;" class="detalhes-smr" onclick="certo5()"> Anderson tem 23 anos
-                de idade.
+            <button id="btn-certo9" style="margin: 10px;" class="detalhes-smr" onclick="certo5()">
+                Um detalhes que ao abrir aparece o conteúdo.
             </button>
 
 
@@ -280,8 +322,8 @@
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
 
-                Oque significa "While" e oque <br>
-                é possivel fazer com ele ?
+                qual o significado da tag "div" e oque <br>
+                é possivel fazer com ela ?
 
             </h3>
 
@@ -289,12 +331,11 @@
             <h1 id="res6"></h1>
 
 
-            <button id="btn-errado11" style=" margin: 10px;" class="detalhes-smr" onclick="errado6()">While significa
-                "Enquanto" e <br> conseguimos fazer funções com ele
-            </button><br>
-            <button id="btn-certo12" style="margin: 10px;" class="detalhes-smr" onclick="certo6()">While significa
-                "Enquanto" <br>
-                e conseguimos fazer repetidores com ele.
+            <button id="btn-errado11" style=" margin: 10px;" class="detalhes-smr" onclick="errado6()"> div significa
+                "conteiner" e <br> conseguimos fazer imagens com ela . </button><br>
+            <button id="btn-certo12" style="margin: 10px;" class="detalhes-smr" onclick="certo6()">div não contén
+                significado <br>
+                e conseguimos fazer Containers com ela.
             </button>
 
 

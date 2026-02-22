@@ -1055,6 +1055,30 @@ footer {
   opacity: 1;
   pointer-events: all;
 }
+.overlay2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.85);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 0.5s ease;
+}
+
+/* Quando ativar */
+.overlay2.active {
+  opacity: 1;
+  pointer-events: all;
+}
 
 /* Texto */
 .game-over {
@@ -1064,6 +1088,16 @@ footer {
     0 0 10px red,
     0 0 20px darkred,
     0 0 40px crimson;
+
+  animation: pulse 1s infinite alternate;
+}
+.win {
+  font-size: 80px;
+  color: rgb(0, 255, 17);
+  text-shadow:
+    0 0 10px rgb(0, 255, 38),
+    0 0 20px rgb(42, 139, 0),
+    0 0 40px rgb(20, 220, 100);
 
   animation: pulse 1s infinite alternate;
 }
