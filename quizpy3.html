@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="logoBoard">
+        <h1 class="title">DevTask</h1>
+        <div class="detalhes-div">
+            <details class="detalhes">
+                <summary class="detalhes-smr"> Sobre DevTask </summary>
+                <p> <strong>DevTask</strong> nasceu <br>de uma necessidade de <br>aprendizado com foco em <br>tecnologia
+                    e um sistema <br>dinâmico de ensino. </p>
+            </details>
+            <details class="detalhes">
+                <summary class="detalhes-smr"> Conteúdos </summary>
+                <p> Aprenda com a <strong>DevTask</strong>: <br> videoaulas, conteúdos escritos,<br> recursos com
+                    inteligência artificial, <br>exemplos práticos e projetos <br>prontos, abrangendo tecnologias como
+                    <br><strong>JavaScript</strong>, <strong>Python</strong>, <strong>HTML</strong> e
+                    <strong>CSS</strong>.
+                </p>
+            </details>
+            <details class="detalhes">
+                <summary class="detalhes-smr"> Roadmap </summary>
+                <p> <strong>Roadmap</strong>: <br>um caminho estruturado <br> para facilitar o ensino,<br> apresentando
+                    de forma clara <br>todas as tecnologias <br>necessárias para o aprendizado. </p>
+            </details>
+        </div>
+    </div>
+    <h1 style="font-size: 75px;" class="welcome">Fala Player!</h1>
+    <div class="div-title-learn">
+        <div class="ABC">
+            <h1 style="text-align: center;" class="titles2">Eai Player!</h1>
+            <details style="text-align: center;" class="detalhes">
+                <summary style="background-color: rgb(0, 0, 45); padding: 10px;" class="detalhes-smr2"> Todas as Regras!
+                </summary>
+                <p> Eai <strong>Pequeno Player</strong>! 👾<br>
+                <h3 style="text-align: center;"> O jogo contén 6 perguntas. <br> E você tem 3 vidas. <br> 1 pergunta
+                    errada = -1 vida <br> se suas vidas chegarem a 0 <br> vai ter um aviso na tela <br> escrito: estude
+                    mais , <br> para você tentar novamente , apenas <br> reinicie a página. <br> </h3>
+                </p>
+            </details>
+        </div> <img style="border: none; " class="img-effect"
+            src="https://cdn3d.iconscout.com/3d/premium/thumb/python-6815592-5602757.png" width="300px">
+    </div>
+    <h1 style="font-size: 75px;" class="welcome">Está Pronto?</h1>
+    <h2 style="font-size: 35px;" class="welcome">Então , Lets GO!!</h2>
+    <div class="perguntas">
+
+        <div class="pergunta">
+
+            <img src="programador.gif" alt="" class="img-effect" width="200px">
+            <br>
+
+            <h3 style="background-color: yellow; color: black;">
+                def add_item(item, items=[]): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;items.append(item) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return items <br><br>
+
+                print(add_item("A")) <br>
+                print(add_item("B")) <br>
+            </h3>
+
+            <h1 id="res1"></h1>
+
+            <button id="btn-certo1" style=" margin: 10px;" class="detalhes-smr" onclick="certo1()">
+                ['A'] <br> ['A', 'B']
+            </button> <br>
+
+            <button id="btn-errado2" style="margin: 10px;" class="detalhes-smr" onclick="errado1()">
+                ['A'] <br> ['B']
+            </button>
+
+        </div>
+
+
+
+        <div class="pergunta">
+
+            <img src="vlogger.gif" alt="" class="img-effect" width="200px">
+            <br>
+
+            <h3 style="text-align: center; border-bottom:solid blue ;">
+                O que esse código demonstra? <br>
+
+                <strong style="background-color: yellow; color: black;">
+                    def outer(): <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;x = 10 <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;def inner(): <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return x <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;return inner <br><br>
+
+                    func = outer() <br>
+                    print(func()) <br>
+                </strong>
+            </h3>
+
+            <h1 id="res2"></h1>
+
+            <button id="btn-certo3" style=" margin: 10px;" class="detalhes-smr" onclick="certo2()">
+                É um closure, mantendo acesso ao escopo externo.
+            </button>
+
+            <button id="btn-errado4" style="margin: 10px;" class="detalhes-smr" onclick="errado2()">
+                Dá erro pois x não é global.
+            </button>
+
+        </div>
+
+
+
+        <div class="pergunta">
+
+            <img src="programador (1).gif" alt="" class="img-effect" width="200px">
+            <br>
+
+            <h3 style="text-align: center; border-bottom:solid blue ;">
+
+                Qual será o resultado? <br>
+
+                <strong style="background-color: yellow; color: black;">
+                    nums = [1,2,3,4,5] <br>
+                    result = [n*2 for n in nums if n % 2 == 0] <br>
+                    print(result)
+                </strong>
+
+            </h3>
+
+            <h1 id="res3"></h1>
+
+            <button id="btn-errado5" style=" margin: 10px;" class="detalhes-smr" onclick="errado3()">
+                [2,4,6,8,10]
+            </button> <br>
+
+            <button id="btn-certo6" style="margin: 10px;" class="detalhes-smr" onclick="certo3()">
+                [4,8]
+            </button>
+
+        </div>
+
+
+
+        <div class="pergunta">
+
+            <img src="marketing-por-e-mail.gif" alt="" class="img-effect" width="200px">
+            <br>
+
+            <h3 style="text-align: center; border-bottom:solid blue ;">
+
+                Qual será a saída? <br>
+
+                <strong style="background-color: yellow; color: black;">
+                    def decorator(func): <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;def wrapper(): <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Antes") <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;func() <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Depois") <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;return wrapper <br><br>
+
+                    @decorator <br>
+                    def hello(): <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Hello") <br><br>
+
+                    hello()
+                </strong>
+
+            </h3>
+
+            <h1 id="res4"></h1>
+
+            <button id="btn-errado8" style=" margin: 10px;" class="detalhes-smr" onclick="errado4()">
+                Hello
+            </button>
+
+            <button id="btn-certo7" style="margin: 10px;" class="detalhes-smr" onclick="certo4()">
+                Antes <br> Hello <br> Depois
+            </button>
+
+        </div>
+
+
+
+        <div class="pergunta">
+
+            <img src="ideia.gif" alt="" class="img-effect" width="200px">
+            <br>
+
+            <h3 style="text-align: center; border-bottom:solid blue ;">
+
+                Qual será a saída? <br>
+
+                <strong style="background-color: yellow; color: black;">
+                    try: <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;x = 1 / 0 <br>
+                    except ZeroDivisionError: <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Erro!") <br>
+                    finally: <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Finalizado")
+                </strong>
+
+            </h3>
+
+            <h1 id="res5"></h1>
+
+            <button id="btn-errado10" style=" margin: 10px;" class="detalhes-smr" onclick="errado5()">
+                Finalizado
+            </button>
+            <br>
+
+            <button id="btn-certo9" style="margin: 10px;" class="detalhes-smr" onclick="certo5()">
+                Erro! <br> Finalizado
+            </button>
+
+        </div>
+
+
+
+        <div class="pergunta">
+
+            <img src="codificacao.gif" alt="" class="img-effect" width="200px">
+            <br>
+
+            <h3 style="text-align: center; border-bottom:solid blue ;">
+
+                Qual a diferença entre: <br>
+
+                <strong style="background-color: yellow; color: black;">
+                    [x for x in range(5)]
+                </strong>
+                <br><br>
+
+                <strong style="background-color: yellow; color: black;">
+                    (x for x in range(5))
+                </strong>
+
+            </h3>
+
+            <h1 id="res6"></h1>
+
+            <button id="btn-errado11" style=" margin: 10px;" class="detalhes-smr" onclick="errado6()">
+                Não há diferença, ambos retornam lista.
+            </button><br>
+
+            <button id="btn-certo12" style="margin: 10px;" class="detalhes-smr" onclick="certo6()">
+                O primeiro cria lista em memória, o segundo é generator sob demanda.
+            </button>
+
+        </div>
+        <button style="margin: 10px;" class="detalhes-smr" onclick="vidasWin()"> Click em min para ver seu
+            resultado </button>
+    </div>
+
+
+
+    <h1 style="color: white;" id="result"></h1>
+
+    <div id="overlay" class="overlay">
+        <h1 class="game-over">ESTUDE MAIS!💀</h1>
+    </div>
+    <div id="overlay2" class="overlay2">
+        <h1 class="win">Destruiu o <strong style="font-family: monospace;">nivellll</strong>! </h1>
+    </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</div>
+<script src="quiz.js"></script>
+</body>
+
+</html>
