@@ -70,7 +70,7 @@ Experiência interativa
 
 🚀 Objetivo
 
-O DevTask foi criado para tornar o aprendizado de programação:
+A DevTask foi criado para tornar o aprendizado de programação:
 
 Mais envolvente
 
