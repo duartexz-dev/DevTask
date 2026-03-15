@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Css/style.css">
     <title>Document</title>
 </head>
 
@@ -86,7 +86,6 @@
                 <p>
                     Eai <strong>Pequeno Player</strong>! 👾<br>
                 <h3 style="text-align: center;">
-
                     O jogo contén 6 perguntas. <br>
                     E você tem 3 vidas. <br>
                     1 pergunta errada = -1 vida <br>
@@ -111,7 +110,8 @@
         </div>
 
 
-        <img style="border: none; border-radius: 0%; " class="img-effect" src="https://logodix.com/logo/470216.png"
+        <img style="border: none; " class="img-effect"
+            src="https://cdn3d.iconscout.com/3d/free/thumb/free-javascript-3d-icon-download-in-png-blend-fbx-gltf-file-formats--html-logo-vue-angular-coding-lang-pack-logos-icons-7577991.png"
             width="300px">
 
     </div>
@@ -125,27 +125,27 @@
 
         <div class="pergunta">
 
-            <img src="programador.gif" alt="" class="img-effect" width="200px">
+            <img src="../images/programador.gif" alt="" class="img-effect" width="200px">
             <br>
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
-                Qual será o resultado visual desse código? <br>
+                Qual será o resultado desse código? <br>
+
 
                 <strong style="background-color: yellow; color: black;">
-                    &lt;p&gt;Olá &lt;strong&gt;Mundo&lt;/strong&gt;&lt;/p&gt;
-                </strong>
+                    let c = 1 <br> while(c<=1){ <br> console.log(c) <br> c++ <br> } <br></strong>
+
             </h3>
+
 
 
             <h1 id="res1"></h1>
 
 
             <button id="btn-certo1" style=" margin: 10px;" class="detalhes-smr" onclick="certo1()">
-                A palavra "Mundo" ficará em negrito.
-            </button> <br>
+                1,2,3,4,5,6,7,8,9,10 em coluna.</button> <br>
             <button id="btn-errado2" style="margin: 10px;" class="detalhes-smr" onclick="errado1()">
-                O texto inteiro ficará em negrito.
-            </button>
+                1,1,1,1,1,1,1..... infinito.</button>
 
 
 
@@ -160,23 +160,25 @@
             <br>
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
-                Qual será a cor final do texto? <br>
-
+                O que o comando abaixo faz?<br>
                 <strong style="background-color: yellow; color: black;">
-                    p { color: red; } <br>
-                    p { color: blue; }
+                    let alunos = ["Maria","Amanda","Marcos","David"]
                 </strong>
+
+
+
             </h3>
 
 
             <h1 id="res2"></h1>
 
 
-            <button id="btn-certo3" style=" margin: 10px;" class="detalhes-smr" onclick="certo2()">
-                Azul
-            </button><br>
-            <button id="btn-errado4" style="margin: 10px;" class="detalhes-smr" onclick="errado2()">
-                Vermelho</button>
+            <button id="btn-certo3" style=" margin: 10px;" class="detalhes-smr" onclick="certo2()">Cria um array com os
+                alunos.
+            </button> <br>
+            <button id="btn-errado4" style="margin: 10px;" class="detalhes-smr" onclick="errado2()">Cria uma vaiável que
+                não pode ser alterada.
+            </button>
 
 
 
@@ -190,22 +192,22 @@
             <br>
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
-                Qual é a diferença principal entre: <br>
+                Qual é a forma correta de criar uma function em JavaScript?
 
-                <strong style="background-color: yellow; color: black;">
-                    display: none; <br>
-                    visibility: hidden;
-                </strong>
+
+
+
             </h3>
 
             <h1 id="res3"></h1>
 
 
-            <button id="btn-errado5" style=" margin: 10px;" class="detalhes-smr" onclick="errado3()">
-                Ambos removem o elemento completamente da página.
+            <button id="btn-errado5" style=" margin: 10px;" class="detalhes-smr" onclick="errado3()"> While(){<br>
+                }
             </button> <br>
-            <button id="btn-certo6" style="margin: 10px;" class="detalhes-smr" onclick="certo3()">
-                display remove o espaço, visibility apenas esconde mas mantém o espaço.
+            <button id="btn-certo6" style="margin: 10px;" class="detalhes-smr" onclick="certo3()">function
+                NameFunction(){ <br>
+                }
             </button>
 
 
@@ -223,24 +225,19 @@
             <br>
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
-                Se um elemento tem: <br>
 
-                <strong style="background-color: yellow; color: black;">
-                    width: 200px;<br>
-                    padding: 20px;<br>
-                    border: 5px solid black;
-                </strong><br>
+                Oque esse código irá exibir? <br>
+                <strong style="background-color: yellow; color: black;">let nome = ["Arthur","David"] <br>
+                    console.log(`${nome[1]} tem 14 anos`)</strong>
 
-                Qual será a largura total padrão (sem box-sizing)?
             </h3>
             <h1 id="res4"></h1>
 
 
-            <button id="btn-errado8" style=" margin: 10px;" class="detalhes-smr" onclick="errado4()">
-                200px
-            </button> <br>
-            <button id="btn-certo7" style="margin: 10px;" class="detalhes-smr" onclick="certo4()">
-                250px</button>
+            <button id="btn-errado8" style=" margin: 10px;" class="detalhes-smr" onclick="errado4()">Arthur tem 14 anos
+            </button>
+            <button id="btn-certo7" style="margin: 10px;" class="detalhes-smr" onclick="certo4()"> David tem 14 anos
+            </button>
 
 
 
@@ -254,20 +251,31 @@
             <br>
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
-                Qual é a vantagem de usar &lt;section&gt; ou &lt;article&gt; ao invés de apenas &lt;div&gt;?
-            </h3>
 
+                Qual será o resultado desse código: <br>
+                <strong style="background-color: yellow; color: black;"> let idade = 18 <br>
+                    let carteira = true
+
+                    if (idade >= 18 && carteira == true) { <br>
+
+                    console.log("Apto") <br>
+
+                    } else { <br>
+                    console.log("inapto") <br>
+                    } </strong>
+
+            </h3>
 
 
             <h1 id="res5"></h1>
 
 
             <button id="btn-errado10" style=" margin: 10px;" class="detalhes-smr" onclick="errado5()">
-                Não existe diferença.> <br>
+                inapto <br>
             </button>
             <br>
             <button id="btn-certo9" style="margin: 10px;" class="detalhes-smr" onclick="certo5()">
-                Melhora semântica, acessibilidade e SEO.
+                Apto
             </button>
 
 
@@ -283,33 +291,29 @@
             <br>
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
-                Qual será a cor final do texto "DevTask"? <br>
 
-                <strong style="background-color: yellow; color: black;">
-                    p { color: blue; } <br>
-                    .texto { color: red; } <br>
-                    #titulo { color: green; } <br>
-                </strong>
-                <br>
-                &lt;p id="titulo" class="texto" style="color: purple;"&gt;
-                DevTask
-                &lt;/p&gt;
+                Oque significa "Return" e oque <br>
+                é possivel fazer com ele ?
+
             </h3>
-
 
 
             <h1 id="res6"></h1>
 
 
-            <button id="btn-errado11" style=" margin: 10px;" class="detalhes-smr" onclick="errado6()">
-                Verde </button><br>
+            <button id="btn-errado11" style=" margin: 10px;" class="detalhes-smr" onclick="errado6()">retorn significa
+                "retorna" <br>
+                e conseguimos excluir valores com ele .
+            </button><br>
             <button id="btn-certo12" style="margin: 10px;" class="detalhes-smr" onclick="certo6()">
-                Roxo
+                return significa
+                "Retorno" e <br> conseguimos retornar valores com ele.
             </button>
 
 
 
         </div>
+
         <button style="margin: 10px;" class="detalhes-smr" onclick="vidasWin()">
             Click em min para ver seu resultado
         </button>
@@ -328,10 +332,11 @@
 
 
 
+
     </div>
 
 
-    <script src="quiz.js"></script>
+    <script src="../js/quiz.js"></script>
 
 
 

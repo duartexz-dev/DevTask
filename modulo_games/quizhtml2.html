@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Css/style.css">
     <title>Document</title>
 </head>
 
@@ -96,6 +96,7 @@
                     para você tentar novamente , apenas <br>
                     reinicie a página. <br>
 
+
                 </h3>
                 </p>
 
@@ -110,8 +111,8 @@
         </div>
 
 
-        <img style="border: none; " class="img-effect"
-            src="https://cdn3d.iconscout.com/3d/premium/thumb/python-6815592-5602757.png" width="300px">
+        <img style="border: none; border-radius: 0%; " class="img-effect" src="https://logodix.com/logo/470216.png"
+            width="300px">
 
     </div>
 
@@ -124,16 +125,15 @@
 
         <div class="pergunta">
 
-            <img src="programador.gif" alt="" class="img-effect" width="200px">
+            <img src="../images/programador.gif" alt="" class="img-effect" width="200px">
             <br>
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
+                Qual será o resultado visual desse código? <br>
 
-                Qual será o resultado desse comando? <br>
-                <strong style="background-color: yellow; color: black;">c = 1 <br>
-                    while c <= 10: <br> print(c) <br> c +=1 </strong>
-
-
+                <strong style="background-color: yellow; color: black;">
+                    &lt;p&gt;Olá &lt;strong&gt;Mundo&lt;/strong&gt;&lt;/p&gt;
+                </strong>
             </h3>
 
 
@@ -141,12 +141,12 @@
 
 
             <button id="btn-certo1" style=" margin: 10px;" class="detalhes-smr" onclick="certo1()">
-
-                1,2,3,4,5,6,7,8,9,10 em coluna.
-
+                A palavra "Mundo" ficará em negrito.
             </button> <br>
-            <button id="btn-errado2" style="margin: 10px;" class="detalhes-smr" onclick="errado1()">Cria um função que
-                retorna "c". </button>
+            <button id="btn-errado2" style="margin: 10px;" class="detalhes-smr" onclick="errado1()">
+                O texto inteiro ficará em negrito.
+            </button>
+
 
 
 
@@ -160,26 +160,23 @@
             <br>
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
-                Qual será o resultado desse código? <br>
+                Qual será a cor final do texto? <br>
+
                 <strong style="background-color: yellow; color: black;">
-                    idade = 17 <br>
-                    if idade >= 18: <br>
-                    print("Pode Votar!") <br>
-                    else: <br>
-                    print("Não pode Votar!") <br></strong>
-
-
-
+                    p { color: red; } <br>
+                    p { color: blue; }
+                </strong>
             </h3>
 
 
             <h1 id="res2"></h1>
 
 
-            <button id="btn-certo3" style=" margin: 10px;" class="detalhes-smr" onclick="certo2()">Não pode
-                Votar!</button>
-            <button id="btn-errado4" style="margin: 10px;" class="detalhes-smr" onclick="errado2()">Pode Votar!
-            </button>
+            <button id="btn-certo3" style=" margin: 10px;" class="detalhes-smr" onclick="certo2()">
+                Azul
+            </button><br>
+            <button id="btn-errado4" style="margin: 10px;" class="detalhes-smr" onclick="errado2()">
+                Vermelho</button>
 
 
 
@@ -193,25 +190,23 @@
             <br>
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
+                Qual é a diferença principal entre: <br>
 
-                Oque é esse comando e oque ele faz? <br>
-                <strong style="background-color: yellow; color: black;"> def saudacao(): <br>
-                    print("Olá") <br>
-
-                    saudacao() <br></strong><br>
-
-
-
-
+                <strong style="background-color: yellow; color: black;">
+                    display: none; <br>
+                    visibility: hidden;
+                </strong>
             </h3>
 
             <h1 id="res3"></h1>
 
 
             <button id="btn-errado5" style=" margin: 10px;" class="detalhes-smr" onclick="errado3()">
-                é um repetidor e ele efetua o comando Olá.</button> <br>
+                Ambos removem o elemento completamente da página.
+            </button> <br>
             <button id="btn-certo6" style="margin: 10px;" class="detalhes-smr" onclick="certo3()">
-                É uma Function , e ela mostra Olá após ser acionada.</button>
+                display remove o espaço, visibility apenas esconde mas mantém o espaço.
+            </button>
 
 
 
@@ -228,19 +223,24 @@
             <br>
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
+                Se um elemento tem: <br>
 
-                Oque esse código irá exibir? <br>
-                <strong style="background-color: yellow; color: black;">alunos = ["Arthur", "David", "Marcos"] <br>
-                    print(alunos[0])</strong>
+                <strong style="background-color: yellow; color: black;">
+                    width: 200px;<br>
+                    padding: 20px;<br>
+                    border: 5px solid black;
+                </strong><br>
 
+                Qual será a largura total padrão (sem box-sizing)?
             </h3>
             <h1 id="res4"></h1>
 
 
-            <button id="btn-errado8" style=" margin: 10px;" class="detalhes-smr" onclick="errado4()">indefined.
-            </button>
-            <button id="btn-certo7" style="margin: 10px;" class="detalhes-smr" onclick="certo4()"> Arthur
-            </button>
+            <button id="btn-errado8" style=" margin: 10px;" class="detalhes-smr" onclick="errado4()">
+                200px
+            </button> <br>
+            <button id="btn-certo7" style="margin: 10px;" class="detalhes-smr" onclick="certo4()">
+                250px</button>
 
 
 
@@ -254,27 +254,20 @@
             <br>
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
-
-                Qual será o resultado desse código: <br>
-                <strong style="background-color: yellow; color: black;">
-                    Nome = "Junior" <br>
-                    Idade = 25 <br>
-                    Cargo = "Sênior" <br>
-
-                    print(f"{Nome} tem {Idade} anos e seu cargo é dev {Cargo}")</strong> <br>
-
+                Qual é a vantagem de usar &lt;section&gt; ou &lt;article&gt; ao invés de apenas &lt;div&gt;?
             </h3>
+
 
 
             <h1 id="res5"></h1>
 
 
-            <button id="btn-errado10" style=" margin: 10px;" class="detalhes-smr" onclick="errado5()"> f"{Nome} tem
-                {Idade} anos e seu cargo é dev {Cargo}" <br>
+            <button id="btn-errado10" style=" margin: 10px;" class="detalhes-smr" onclick="errado5()">
+                Não existe diferença.> <br>
             </button>
             <br>
-            <button id="btn-certo9" style="margin: 10px;" class="detalhes-smr" onclick="certo5()"> Junior tem 25 anos
-                anos e seu cargo é dev Sênior.
+            <button id="btn-certo9" style="margin: 10px;" class="detalhes-smr" onclick="certo5()">
+                Melhora semântica, acessibilidade e SEO.
             </button>
 
 
@@ -290,27 +283,28 @@
             <br>
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
+                Qual será a cor final do texto "DevTask"? <br>
 
-                Qual a diferença entre esses dois códigos? <br>
                 <strong style="background-color: yellow; color: black;">
-                    nomes = ["Arthur", "Pedro"]
+                    p { color: blue; } <br>
+                    .texto { color: red; } <br>
+                    #titulo { color: green; } <br>
                 </strong>
                 <br>
-                <strong style="background-color: yellow; color: black;">
-                    nomes = ("Arthur", "Pedro")
-                </strong>
-
+                &lt;p id="titulo" class="texto" style="color: purple;"&gt;
+                DevTask
+                &lt;/p&gt;
             </h3>
+
 
 
             <h1 id="res6"></h1>
 
 
-            <button id="btn-errado11" style=" margin: 10px;" class="detalhes-smr" onclick="errado6()">Nenhuma pois são
-                iguais na visão do console.
-            </button><br>
-            <button id="btn-certo12" style="margin: 10px;" class="detalhes-smr" onclick="certo6()"> A primeira pode ser
-                alterada e a segunda não.
+            <button id="btn-errado11" style=" margin: 10px;" class="detalhes-smr" onclick="errado6()">
+                Verde </button><br>
+            <button id="btn-certo12" style="margin: 10px;" class="detalhes-smr" onclick="certo6()">
+                Roxo
             </button>
 
 
@@ -334,25 +328,10 @@
 
 
 
-
     </div>
 
 
-    <script src="quiz.js"></script>
-
-
-
-</body>
-
-
-
-
-
-
-</div>
-
-
-<script src="quiz.js"></script>
+    <script src="../js/quiz.js"></script>
 
 
 

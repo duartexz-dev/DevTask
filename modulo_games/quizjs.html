@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Css/style.css">
     <title>Document</title>
 </head>
 
@@ -125,27 +125,27 @@
 
         <div class="pergunta">
 
-            <img src="programador.gif" alt="" class="img-effect" width="200px">
+            <img src="../images/programador.gif" alt="" class="img-effect" width="200px">
             <br>
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
-                Qual será o resultado desse código? <br>
 
+                Um programador cria 3 variáveis , a primeira contém <br>
+                o nome de n1 a segunda de n2 e a terceira de n3. <br>
+                com os seguintes valores : <br>
+                <strong style="background-color: yellow; color: black;">let n1 = 20 let n2 = 20 let n3 = 2</strong> <br>
+                após isso ele efetua este comando: <strong
+                    style="background-color: yellow; color: black;">cosnsole.log(n1+n2/n3)</strong>
 
-                <strong style="background-color: yellow; color: black;">
-                    let c = 1 <br> while(c<=1){ <br> console.log(c) <br> c++ <br> } <br></strong>
 
             </h3>
-
 
 
             <h1 id="res1"></h1>
 
 
-            <button id="btn-certo1" style=" margin: 10px;" class="detalhes-smr" onclick="certo1()">
-                1,2,3,4,5,6,7,8,9,10 em coluna.</button> <br>
-            <button id="btn-errado2" style="margin: 10px;" class="detalhes-smr" onclick="errado1()">
-                1,1,1,1,1,1,1..... infinito.</button>
+            <button id="btn-certo1" style=" margin: 10px;" class="detalhes-smr" onclick="certo1()">30</button>
+            <button id="btn-errado2" style="margin: 10px;" class="detalhes-smr" onclick="errado1()">n1+n2/n3</button>
 
 
 
@@ -162,7 +162,7 @@
             <h3 style="text-align: center; border-bottom:solid blue ;">
                 O que o comando abaixo faz?<br>
                 <strong style="background-color: yellow; color: black;">
-                    let alunos = ["Maria","Amanda","Marcos","David"]
+                    console.log("Olá mundo")
                 </strong>
 
 
@@ -173,12 +173,10 @@
             <h1 id="res2"></h1>
 
 
-            <button id="btn-certo3" style=" margin: 10px;" class="detalhes-smr" onclick="certo2()">Cria um array com os
-                alunos.
-            </button> <br>
-            <button id="btn-errado4" style="margin: 10px;" class="detalhes-smr" onclick="errado2()">Cria uma vaiável que
-                não pode ser alterada.
-            </button>
+            <button id="btn-certo3" style=" margin: 10px;" class="detalhes-smr" onclick="certo2()">Mostra Olá mundo
+                .</button>
+            <button id="btn-errado4" style="margin: 10px;" class="detalhes-smr" onclick="errado2()">Mostra
+                console.log("Olá mundo")</button>
 
 
 
@@ -192,7 +190,7 @@
             <br>
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
-                Qual é a forma correta de criar uma function em JavaScript?
+                Qual é a forma correta de criar uma variável em JavaScript?
 
 
 
@@ -202,13 +200,10 @@
             <h1 id="res3"></h1>
 
 
-            <button id="btn-errado5" style=" margin: 10px;" class="detalhes-smr" onclick="errado3()"> While(){<br>
-                }
-            </button> <br>
-            <button id="btn-certo6" style="margin: 10px;" class="detalhes-smr" onclick="certo3()">function
-                NameFunction(){ <br>
-                }
-            </button>
+            <button id="btn-errado5" style=" margin: 10px;" class="detalhes-smr" onclick="errado3()"> nome =
+                valor</button> <br>
+            <button id="btn-certo6" style="margin: 10px;" class="detalhes-smr" onclick="certo3()">
+                let nome = valor</button>
 
 
 
@@ -227,16 +222,15 @@
             <h3 style="text-align: center; border-bottom:solid blue ;">
 
                 Oque esse código irá exibir? <br>
-                <strong style="background-color: yellow; color: black;">let nome = ["Arthur","David"] <br>
-                    console.log(`${nome[1]} tem 14 anos`)</strong>
+                <strong style="background-color: yellow; color: black;">console.log("5" + "5")</strong>
 
             </h3>
             <h1 id="res4"></h1>
 
 
-            <button id="btn-errado8" style=" margin: 10px;" class="detalhes-smr" onclick="errado4()">Arthur tem 14 anos
+            <button id="btn-errado8" style=" margin: 10px;" class="detalhes-smr" onclick="errado4()">"5" + "5"
             </button>
-            <button id="btn-certo7" style="margin: 10px;" class="detalhes-smr" onclick="certo4()"> David tem 14 anos
+            <button id="btn-certo7" style="margin: 10px;" class="detalhes-smr" onclick="certo4()"> 55
             </button>
 
 
@@ -253,16 +247,9 @@
             <h3 style="text-align: center; border-bottom:solid blue ;">
 
                 Qual será o resultado desse código: <br>
-                <strong style="background-color: yellow; color: black;"> let idade = 18 <br>
-                    let carteira = true
-
-                    if (idade >= 18 && carteira == true) { <br>
-
-                    console.log("Apto") <br>
-
-                    } else { <br>
-                    console.log("inapto") <br>
-                    } </strong>
+                <strong style="background-color: yellow; color: black;">let Nome = "Anderson" <br>
+                    let Idade = 23 <br>
+                    console.log(`${Nome} tem ${Idade} anos de idade.`)</strong>
 
             </h3>
 
@@ -270,12 +257,12 @@
             <h1 id="res5"></h1>
 
 
-            <button id="btn-errado10" style=" margin: 10px;" class="detalhes-smr" onclick="errado5()">
-                inapto <br>
+            <button id="btn-errado10" style=" margin: 10px;" class="detalhes-smr" onclick="errado5()">${Nome} tem
+                ${Idade} anos de idade. <br>
             </button>
             <br>
-            <button id="btn-certo9" style="margin: 10px;" class="detalhes-smr" onclick="certo5()">
-                Apto
+            <button id="btn-certo9" style="margin: 10px;" class="detalhes-smr" onclick="certo5()"> Anderson tem 23 anos
+                de idade.
             </button>
 
 
@@ -292,7 +279,7 @@
 
             <h3 style="text-align: center; border-bottom:solid blue ;">
 
-                Oque significa "Return" e oque <br>
+                Oque significa "While" e oque <br>
                 é possivel fazer com ele ?
 
             </h3>
@@ -301,18 +288,18 @@
             <h1 id="res6"></h1>
 
 
-            <button id="btn-errado11" style=" margin: 10px;" class="detalhes-smr" onclick="errado6()">retorn significa
-                "retorna" <br>
-                e conseguimos excluir valores com ele .
+            <button id="btn-errado11" style=" margin: 10px;" class="detalhes-smr" onclick="errado6()">While significa
+                "Enquanto" e <br> conseguimos fazer funções com ele
             </button><br>
-            <button id="btn-certo12" style="margin: 10px;" class="detalhes-smr" onclick="certo6()">
-                return significa
-                "Retorno" e <br> conseguimos retornar valores com ele.
+            <button id="btn-certo12" style="margin: 10px;" class="detalhes-smr" onclick="certo6()">While significa
+                "Enquanto" <br>
+                e conseguimos fazer repetidores com ele.
             </button>
 
 
 
         </div>
+
 
         <button style="margin: 10px;" class="detalhes-smr" onclick="vidasWin()">
             Click em min para ver seu resultado
@@ -336,7 +323,7 @@
     </div>
 
 
-    <script src="quiz.js"></script>
+    <script src="../js/quiz.js"></script>
 
 
 

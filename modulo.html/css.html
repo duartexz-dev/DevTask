@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cursos.css">
+    <link rel="stylesheet" href="../Css/cursos.css">
     <title>DevTask-Cursos</title>
 </head>
 
@@ -71,9 +71,12 @@
         <div class="detalhes-bv">
 
 
-            <h2 class="welcome2">Está Pronto para Começar sua <strong>Jornada</strong> <br> no curso de <strong
-                    style="color: yellow;">JavaScript</strong> da Devtask? <br> Então se Prepare e clique em <br> "Como
-                Começar" para ter suas Instruções.</h2>
+            <h2 class="welcome2">Está Pronto para Começar sua <strong>Jornada</strong> <br> no curso de <strong>Html e
+                    CSS</strong><br>
+                da DevTask, para começar <br> desça ate Aulas e escolha <br>
+                seu professor.
+
+            </h2>
 
             <details class="detalhes2">
 
@@ -97,8 +100,7 @@
 
         </div>
 
-        <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-javascript-3d-icon-download-in-png-blend-fbx-gltf-file-formats--html-logo-vue-angular-coding-lang-pack-logos-icons-7577991.png"
-            alt="" class="img-effect" width="350px">
+        <img src="https://logodix.com/logo/470216.png" alt="" class="img-effect" width="350px">
 
     </div>
 
@@ -127,7 +129,7 @@
                     seja bem-vindo à DevTask Aulas.<br>
                     Um espaço criado para <br>
                     Você começar sua jornada <br>
-                    em aprender <strong style="color: yellow;">JavaScript</strong><br>
+                    em aprender <strong style="color: yellow;">Html e Css</strong><br>
                     Para começar <br>selecione o seu professor!
                 </p>
 
@@ -168,7 +170,7 @@
 
             </details>
 
-            <div class="btn-confirmar"> <a href="aulasJs4.html">Aprender</a> </div>
+            <div class="btn-confirmar"> <a href="aulasHtml5.html">Aprender</a> </div>
 
         </div>
 
@@ -203,7 +205,7 @@
 
             </details>
 
-            <div class="btn-confirmar"> <a href="aulasJs3.html">Aprender</a> </div>
+            <div class="btn-confirmar"> <a href="aulasHtml6.html">Aprender</a> </div>
 
         </div>
 
@@ -225,7 +227,7 @@
                 <p style="text-align: center;">
                 <h3>Olá, <strong style="color: yellow;">Pequeno Gafanhoto!</strong> <br>
                     Você está na DevTask Programming ! <br>
-                    Aqui nos temos exemplos práticos e <br>
+                    Aqui nos temos exemplos práticos e projetos <br>
                     simples , para você começar a práticar! <br>
                     Pronto para colocar seus aprendizados em prática?
 
@@ -255,13 +257,17 @@
 
         <div class="ex">
 
-            <h1 class="nome-profs">Entrada e Saída de Dados</h1>
+            <h1 class="nome-profs">Lista</h1>
             <br>
-
-            <h1 style=" font-size:30px;  color: yellow; " class="escrever">
-                Amanda <br> 18 <br><br>
+            <h1 style="color: yellow; font-size: 40px;" class="escrever">
+                <details>
+                    <summary>text-btn</summary>
+                    <ol>
+                        <li>lista1</li>
+                        <li>lista2</li>
+                    </ol>
+                </details>
             </h1>
-
             <br>
             <details class="detalhes">
                 <summary class="detalhes-smr3">
@@ -272,17 +278,24 @@
                         Leia o Texto abaixo!
                     </span>
                 </summary>
-                Entendendo variáveis em JavaScript:<br><br>
 
-                Crie a variável
-                <strong style="color: yellow;">let Name = "Amanda"</strong><br>
 
-                Depois crie:<br>
-                <strong style="color: yellow;">let Idade = 18</strong><br><br>
+                <p>
+                    Use <span style="background: yellow; color: black;">&lt;details&gt;</span>
+                    para criar a área que abre e fecha.<br><br>
 
-                Para mostrar na tela use:<br>
-                <strong style="color: yellow;">console.log(Name)</strong><br>
-                <strong style="color: yellow;">console.log(Idade)</strong>
+                    Dentro dela coloque
+                    <span style="background: yellow; color: black;">&lt;summary&gt;</span>,
+                    que será o botão clicável.<br><br>
+
+                    Abaixo do summary adicione
+                    <span style="background: yellow; color: black;">&lt;ol&gt;</span>
+                    e dentro dele use
+                    <span style="background: yellow; color: black;">&lt;li&gt;</span>
+                    para criar os itens da lista.
+                </p>
+
+
             </details>
             <br>
 
@@ -305,22 +318,15 @@
 
         <div class="ex">
 
-            <h1 class="nome-profs"> Condições com IF/ELSE </h1>
+            <h1 class="nome-profs"> Usando INPUTS </h1>
             <br>
 
-            <h1 style="color: yellow; " class="escrever">
-
-                Nota = 7 <br>
-                if(Nota >= 6){ <br>
-                console.log("Aprovado") <br>
-                }else{ <br>
-                console.log("Reprovado") <br>
-                } <br>
-
+            <h1 style="color: yellow; font-size: 40px;" class="escrever"><input type="text" placeholder="Nome"> <br>
+                <input type="number" placeholder="Idade">
             </h1>
 
             <br>
-            <details class="detalhes">
+            <details class=" detalhes">
                 <summary class="detalhes-smr3">
                     <span class="antes">
                         Bora Fazer?
@@ -329,24 +335,24 @@
                         Leia o Texto abaixo!
                     </span>
                 </summary>
-                Faça um verificador de nota usando If/Else.<br><br>
 
-                <strong>Instruções:</strong><br>
 
-                Crie a variável
-                <strong style="color: yellow;">let nota = 7</strong><br>
+                <p>
+                    Use <span style="background: yellow; color: black;">&lt;input&gt;</span>
+                    para criar um campo de digitação.<br><br>
 
-                Depois use:<br>
-                <strong style="color: yellow;">if (nota >= 6) {</strong><br>
+                    O atributo
+                    <span style="background: yellow; color: black;">type="text"</span>
+                    é para texto comum.<br>
 
-                Dentro coloque:<br>
-                <strong style="color: yellow;">console.log("Aprovado")</strong><br>
+                    Já
+                    <span style="background: yellow; color: black;">type="number"</span>
+                    é para números.<br><br>
 
-                Após isso use:<br>
-                <strong style="color: yellow;">} else {</strong><br>
-
-                E finalize com:<br>
-                <strong style="color: yellow;">console.log("Reprovado") }</strong>
+                    O
+                    <span style="background: yellow; color: black;">placeholder</span>
+                    mostra uma dica dentro do campo.
+                </p>
 
             </details>
             <br>
@@ -368,12 +374,13 @@
 
         <div class="ex">
 
-            <h1 class="nome-profs">Repetições com While</h1>
+            <h1 class="nome-profs">Texto com P-H1-H2</h1>
             <br>
-            <h1><strong
-                    style="color: yellow; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 40px;"
-                    class="escrever">1,2,3,4,5,6,7,8,9,10</strong></h1>
 
+            <h1 style="color: yellow; " class="escrever">Título</h1> <br>
+            <h2 style="color: yellow; " class="escrever">Subtítulo</h2> <br>
+            <p style="color: yellow; " class="escrever">Texto</p> <br>
+            99
             <br>
             <details class="detalhes">
                 <summary class="detalhes-smr3">
@@ -382,21 +389,18 @@
 
                 </summary>
 
-                Faça um contador até 10 usando While.<br><br>
+                <p>
+                    Use <span style="background: yellow; color: black;">&lt;h1&gt;</span>
+                    para o título principal.<br><br>
 
-                <strong>Instruções:</strong><br>
+                    Use <span style="background: yellow; color: black;">&lt;h2&gt;</span>
+                    para o subtítulo.<br><br>
 
-                Crie a variável
-                <strong style="color: yellow;">let Contador = 1</strong><br>
+                    Use <span style="background: yellow; color: black;">&lt;p&gt;</span>
+                    para texto comum.<br><br>
 
-                Depois use:<br>
-                <strong style="color: yellow;">while (Contador <= 10) {</strong><br>
-
-                        Dentro coloque:<br>
-                        <strong style="color: yellow;">console.log(Contador)</strong><br>
-
-                        E finalize com:<br>
-                        <strong style="color: yellow;">Contador++ }</strong>
+                    Sempre <span style="background: yellow; color: black;">abra e feche corretamente</span> as tags.
+                </p>
 
             </details>
             <br>
@@ -440,7 +444,7 @@
 
 
 
-    <script src="js.js"></script>
+    <script src="css.js"></script>
 
 
 
